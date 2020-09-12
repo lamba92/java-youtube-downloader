@@ -20,8 +20,8 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.gradle/
-          key: ${{ runner.os }}-mongo_${{matrix.mongo_versions}}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: ${{ runner.os }}-mongo_${{matrix.mongo_versions}}-gradle-
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys: ${{ runner.os }}-gradle-
       - name: Make gradle executable
         run: chmod +x gradlew
       - name: Launch tests
