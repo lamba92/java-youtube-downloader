@@ -4,8 +4,9 @@
 # Compiled dirs
 target
 out
-
-
+build/
+.gradle/
+video/
 # Log file
 *.log
 
